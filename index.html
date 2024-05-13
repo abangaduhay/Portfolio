@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONT-AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Main CSS-->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Personal Portfolio website</title>
+  </head>
+  <body>
+    <!-- Header Design-->
+    <header class="header">
+      <a href="#" class="logo"><span>A</span>chmad <span>F</span>ikri</a>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section Design-->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi, My name</h3>
+        <h1>Achmad Fikri Abdillah</h1>
+        <h3>I'm a <span class="multiple-text"></span></h3>
+        <p>
+          I am a web developer who is passionate about solving problems and
+          create effective solutions to online business development. Have deep
+          experience developing an online shop website for a herbal medicine
+          shop, customer landing pages, admin landing pages. Interested in the
+          world of digital business and web application architecture
+        </p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/fikri_lil2/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="#" class="btn" id="download-cv-btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="assets/img/profile.jpeg" alt="" />
+      </div>
+    </section>
+
+    <!-- About Section Design-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/img/aboutpic.JPG" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>ME</span></h2>
+        <h3>Web Developer</h3>
+        <p>
+          Hey, my name is Achmad Fikri and my friends call me Fikri. I'm a full
+          stack web developer,and UI/UX designer from Indonesia. I am also
+          interested in technology and sports. Currently I am deepening my
+          knowledge about website architecture so that I can solve existing
+          problems with good and creative solutions
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </section>
+
+    <!-- Service Section Design-->
+    <section class="services" id="services">
+      <h2 class="headinng">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            I am a web developer with strong mastery in major programming
+            languages such as JavaScript, PHP, and React JS, I am able to
+            provide the best solutions in creating websites to suit your
+            business needs.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-database"></i>
+          <h3>Data Engineering</h3>
+          <p>
+            I have a deep understanding of the complexities of modern databases,
+            and in particular, I master MySQL closely, ensuring that your data
+            is managed with a high degree of precision and reliability.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section Design-->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="assets/img/project 1.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Customers Landing Pages</h4>
+            <p>
+              Create a dynamic website for customers to purchase Immune Store
+              products. Using HTML, CSS, Javascript.
+            </p>
+            <a href="#" class="btn">Let's see the project I made</a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/img/project 2.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Admin Landing Pages</h4>
+            <p>
+              Create a website for the seller side to organize products and
+              manage profits at Immunie Store. Using database APIs, PHP, and
+              Laravel Framework.
+            </p>
+            <a href="#" class="btn">Let's see the project I made</a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/img/project 3.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>TODO-LIST APP</h4>
+            <p>
+              Create a Todo List app to organize daily activities. Using HTML,
+              CSS, and Javascript
+            </p>
+            <a href="#" class="btn">Let's see the project I made</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section Design-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contat <span>Me</span></h2>
+
+      <form
+        action="send_email.php"
+        method="post"
+        onsubmit="return sendMessage()"
+      >
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- Footer Section Design-->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by @Achmad Fikri | All Right Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scroll JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typed JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Main JS-->
+    <script src="main.js"></script>
+  </body>
+</html>
